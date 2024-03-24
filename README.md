@@ -1,4 +1,4 @@
-# Deploy Flask Application Using Github Actions and AWS EC2 (Gunicorn & Nginx)
+# Deploy lang-chain and Flask Application Using Github Actions and AWS EC2 (Gunicorn & Nginx)
 
 **Steps:-**
 1. Create EC2 instance.
