@@ -4,13 +4,13 @@ echo "deleting old app"
 sudo rm -rf /var/www/
 
 echo "creating app folder"
-sudo mkdir -p /var/www/langchain-app 
+sudo mkdir -p /var/www/app 
 
 echo "moving files to app folder"
-sudo mv  * /var/www/langchain-app
+sudo mv  * /var/www/app
 
 # Navigate to the app directory
-cd /var/www/langchain-app/
+cd /var/www/app/
 sudo mv env .env
 
 sudo apt-get update
@@ -38,7 +38,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/var/www/langchain-app/myapp.sock;
+        proxy_pass http://unix:/var/www/app/myapp.sock;
     }
 }
 EOF'
